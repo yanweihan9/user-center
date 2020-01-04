@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_center?serverTimezone=UTC
+    hikari:
+      username: root
+      password: tiger
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: user-center
+
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        cluster-name: SH
+        namespace: 0654a3a5-0b28-4b7d-94f0-53fc283544a5
+server:
+  port: 8081
